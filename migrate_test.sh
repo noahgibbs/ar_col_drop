@@ -14,6 +14,9 @@
 # Break on errors
 set -e
 
+echo Create DB if needed
+./bin/rake db:create || echo No harm no foul
+
 echo Migrate up to stable version
 VERSION=20151126181133 ./bin/rake db:migrate
 
