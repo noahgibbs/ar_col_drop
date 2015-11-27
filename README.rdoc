@@ -3,6 +3,13 @@
 This Rails app is a demonstration of a design oddity in ActiveRecord
 that high-uptime sites will need to carefully work around.
 
+To show the problem, run migrate_test.sh. Or read through it and then
+do the same thing manually.
+
+You may need to set up database.yml appropriately as well. I have
+it configured for mysql on localhost, root account and no password.
+It's a depressingly common config, but it may not match yours.
+
 Some of its practices aren't great, and should not be emulated. For
 instance, it creates seed data using migrations rather than db:seed
 for ease of reproduction, even though that's a bad practice.

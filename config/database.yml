@@ -7,7 +7,7 @@
 default: &default
   adapter: mysql2
   username: root
-  hostname: localhost
+  host: localhost
   pool: 5
   timeout: 5000
 
