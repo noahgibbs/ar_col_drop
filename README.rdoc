@@ -1,0 +1,11 @@
+== README
+
+This Rails app is a demonstration of a design oddity in ActiveRecord
+that high-uptime sites will need to carefully work around.
+
+Some of its practices aren't great, and should not be emulated. For
+instance, it creates seed data using migrations rather than db:seed
+for ease of reproduction, even though that's a bad practice.
+
+And I hope this goes without saying, but *please* don't put any data
+you actually care about into this app.
