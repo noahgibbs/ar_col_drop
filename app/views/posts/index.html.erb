@@ -7,7 +7,7 @@
 <div id="posts">
 <% @posts.each do |post| %>
   <div class="a_post">
-    <b><%= post.title %></b>: <br/>
+    <b><%= link_to(post.title, action: :show, id: post) %></b>: <br/>
     <%= post.body %>
   </div>
   <hr/>
