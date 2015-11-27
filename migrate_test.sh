@@ -15,7 +15,7 @@
 set -e
 
 echo Migrate up to stable version
-VERSION= ./bin/rake db:migrate
+VERSION=20151126181133 ./bin/rake db:migrate
 
 echo Start the server, which will see that version
 ./bin/rails server -p 3011 &

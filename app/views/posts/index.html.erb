@@ -1,0 +1,15 @@
+<h1>Venerable: Showing Oddities In ActiveRecord</h1>
+
+<p>
+  Sightings of terms of Venery!
+</p>
+
+<div id="posts">
+<% @posts.each do |post| %>
+  <div class="a_post">
+    <b><%= post.title %></b>: <br/>
+    <%= post.body %>
+  </div>
+  <hr/>
+<% end %>
+</div>
